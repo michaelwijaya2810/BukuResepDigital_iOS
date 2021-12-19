@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		CEF7AF8227649849006B6BD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF7AF8127649849006B6BD7 /* AppDelegate.swift */; };
 		CEF7AF8427649849006B6BD7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF7AF8327649849006B6BD7 /* SceneDelegate.swift */; };
-		CEF7AF8627649849006B6BD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF7AF8527649849006B6BD7 /* ViewController.swift */; };
+		CEF7AF8627649849006B6BD7 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF7AF8527649849006B6BD7 /* LoginController.swift */; };
 		CEF7AF8927649849006B6BD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF7AF8727649849006B6BD7 /* Main.storyboard */; };
 		CEF7AF8C27649849006B6BD7 /* TheRecipeBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEF7AF8A27649849006B6BD7 /* TheRecipeBook.xcdatamodeld */; };
 		CEF7AF8E2764984B006B6BD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEF7AF8D2764984B006B6BD7 /* Assets.xcassets */; };
 		CEF7AF912764984B006B6BD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF7AF8F2764984B006B6BD7 /* LaunchScreen.storyboard */; };
+		CEF7AF992764A90F006B6BD7 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF7AF982764A90F006B6BD7 /* RegisterController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CEF7AF7E27649849006B6BD7 /* TheRecipeBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheRecipeBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF7AF8127649849006B6BD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEF7AF8327649849006B6BD7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CEF7AF8527649849006B6BD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEF7AF8527649849006B6BD7 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		CEF7AF8827649849006B6BD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEF7AF8B27649849006B6BD7 /* TheRecipeBook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TheRecipeBook.xcdatamodel; sourceTree = "<group>"; };
 		CEF7AF8D2764984B006B6BD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEF7AF902764984B006B6BD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEF7AF922764984B006B6BD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEF7AF982764A90F006B6BD7 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +62,13 @@
 			children = (
 				CEF7AF8127649849006B6BD7 /* AppDelegate.swift */,
 				CEF7AF8327649849006B6BD7 /* SceneDelegate.swift */,
-				CEF7AF8527649849006B6BD7 /* ViewController.swift */,
+				CEF7AF8527649849006B6BD7 /* LoginController.swift */,
 				CEF7AF8727649849006B6BD7 /* Main.storyboard */,
 				CEF7AF8D2764984B006B6BD7 /* Assets.xcassets */,
 				CEF7AF8F2764984B006B6BD7 /* LaunchScreen.storyboard */,
 				CEF7AF922764984B006B6BD7 /* Info.plist */,
 				CEF7AF8A27649849006B6BD7 /* TheRecipeBook.xcdatamodeld */,
+				CEF7AF982764A90F006B6BD7 /* RegisterController.swift */,
 			);
 			path = TheRecipeBook;
 			sourceTree = "<group>";
@@ -141,7 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEF7AF8627649849006B6BD7 /* ViewController.swift in Sources */,
+				CEF7AF992764A90F006B6BD7 /* RegisterController.swift in Sources */,
+				CEF7AF8627649849006B6BD7 /* LoginController.swift in Sources */,
 				CEF7AF8227649849006B6BD7 /* AppDelegate.swift in Sources */,
 				CEF7AF8C27649849006B6BD7 /* TheRecipeBook.xcdatamodeld in Sources */,
 				CEF7AF8427649849006B6BD7 /* SceneDelegate.swift in Sources */,
