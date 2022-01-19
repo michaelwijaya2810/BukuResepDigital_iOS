@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2226E6482798051A0072C506 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2226E6452798051A0072C506 /* LoginController.swift */; };
+		2226E64A2798051A0072C506 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2226E6492798051A0072C506 /* RegisterController.swift */; };
+		22B667112798293000216544 /* Users+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B6670F2798293000216544 /* Users+CoreDataClass.swift */; };
+		22B667122798293000216544 /* Users+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B667102798293000216544 /* Users+CoreDataProperties.swift */; };
 		CE3A5D1B2796E93800BB629A /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A5D1A2796E93800BB629A /* Recipe.swift */; };
 		CE3A5D202796F2DD00BB629A /* RecipeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A5D1E2796F2DD00BB629A /* RecipeViewCell.swift */; };
 		CE3A5D212796F2DD00BB629A /* RecipeViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE3A5D1F2796F2DD00BB629A /* RecipeViewCell.xib */; };
@@ -52,6 +56,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2226E6452798051A0072C506 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginController.swift; path = "../../../../Documents/BukuResepDigital_iOS:registerpagelogin/TheRecipeBook/LoginController.swift"; sourceTree = "<group>"; };
+		2226E6492798051A0072C506 /* RegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterController.swift; path = "../../../../Documents/BukuResepDigital_iOS:registerpagelogin/TheRecipeBook/RegisterController.swift"; sourceTree = "<group>"; };
+		22B6670F2798293000216544 /* Users+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Users+CoreDataClass.swift"; sourceTree = "<group>"; };
+		22B667102798293000216544 /* Users+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Users+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		CE3A5D1A2796E93800BB629A /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		CE3A5D1E2796F2DD00BB629A /* RecipeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewCell.swift; sourceTree = "<group>"; };
 		CE3A5D1F2796F2DD00BB629A /* RecipeViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipeViewCell.xib; sourceTree = "<group>"; };
@@ -92,6 +100,8 @@
 		CEF7AF7527649849006B6BD7 = {
 			isa = PBXGroup;
 			children = (
+				22B6670F2798293000216544 /* Users+CoreDataClass.swift */,
+				22B667102798293000216544 /* Users+CoreDataProperties.swift */,
 				CEF7AF8027649849006B6BD7 /* TheRecipeBook */,
 				CEF7AF7F27649849006B6BD7 /* Products */,
 			);
@@ -108,6 +118,8 @@
 		CEF7AF8027649849006B6BD7 /* TheRecipeBook */ = {
 			isa = PBXGroup;
 			children = (
+				2226E6452798051A0072C506 /* LoginController.swift */,
+				2226E6492798051A0072C506 /* RegisterController.swift */,
 				CEF7AF8127649849006B6BD7 /* AppDelegate.swift */,
 				CEF7AF8327649849006B6BD7 /* SceneDelegate.swift */,
 				CEF7AF8727649849006B6BD7 /* Main.storyboard */,
@@ -233,8 +245,12 @@
 				CE3A5D232796F51200BB629A /* HomeController.swift in Sources */,
 				CE3A5D1B2796E93800BB629A /* Recipe.swift in Sources */,
 				CEF7AF8C27649849006B6BD7 /* TheRecipeBook.xcdatamodeld in Sources */,
+				22B667122798293000216544 /* Users+CoreDataProperties.swift in Sources */,
+				2226E6482798051A0072C506 /* LoginController.swift in Sources */,
 				CEF7AF8427649849006B6BD7 /* SceneDelegate.swift in Sources */,
 				CE3A5D33279712B500BB629A /* AddEditController.swift in Sources */,
+				22B667112798293000216544 /* Users+CoreDataClass.swift in Sources */,
+				2226E64A2798051A0072C506 /* RegisterController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

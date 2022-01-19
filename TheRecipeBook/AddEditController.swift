@@ -36,6 +36,10 @@ class AddEditController: UIViewController {
         dropdown.topOffset = CGPoint(x: 0, y:-(dropdown.anchorView?.plainView.bounds.height)!)
         
         dropdown.direction = .bottom
+        
+        
+        
+        
     }
     
     @IBAction func showCountryOpt(_ sender: Any) {
