@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE0803D827989AB100C581A2 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0803D627989AB100C581A2 /* RegisterController.swift */; };
+		CE0803D927989AB100C581A2 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0803D727989AB100C581A2 /* LoginController.swift */; };
 		CE3A5D1B2796E93800BB629A /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A5D1A2796E93800BB629A /* Recipe.swift */; };
 		CE3A5D202796F2DD00BB629A /* RecipeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A5D1E2796F2DD00BB629A /* RecipeViewCell.swift */; };
 		CE3A5D212796F2DD00BB629A /* RecipeViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE3A5D1F2796F2DD00BB629A /* RecipeViewCell.xib */; };
@@ -52,6 +54,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE0803D627989AB100C581A2 /* RegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
+		CE0803D727989AB100C581A2 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		CE3A5D1A2796E93800BB629A /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		CE3A5D1E2796F2DD00BB629A /* RecipeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewCell.swift; sourceTree = "<group>"; };
 		CE3A5D1F2796F2DD00BB629A /* RecipeViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipeViewCell.xib; sourceTree = "<group>"; };
@@ -108,6 +112,8 @@
 		CEF7AF8027649849006B6BD7 /* TheRecipeBook */ = {
 			isa = PBXGroup;
 			children = (
+				CE0803D727989AB100C581A2 /* LoginController.swift */,
+				CE0803D627989AB100C581A2 /* RegisterController.swift */,
 				CEF7AF8127649849006B6BD7 /* AppDelegate.swift */,
 				CEF7AF8327649849006B6BD7 /* SceneDelegate.swift */,
 				CEF7AF8727649849006B6BD7 /* Main.storyboard */,
@@ -232,6 +238,8 @@
 				CEF7AF8227649849006B6BD7 /* AppDelegate.swift in Sources */,
 				CE3A5D232796F51200BB629A /* HomeController.swift in Sources */,
 				CE3A5D1B2796E93800BB629A /* Recipe.swift in Sources */,
+				CE0803D927989AB100C581A2 /* LoginController.swift in Sources */,
+				CE0803D827989AB100C581A2 /* RegisterController.swift in Sources */,
 				CEF7AF8C27649849006B6BD7 /* TheRecipeBook.xcdatamodeld in Sources */,
 				CEF7AF8427649849006B6BD7 /* SceneDelegate.swift in Sources */,
 				CE3A5D33279712B500BB629A /* AddEditController.swift in Sources */,
