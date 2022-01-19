@@ -7,6 +7,7 @@
 
 import UIKit
 import DropDown
+import CoreData
 
 class AddEditController: UIViewController,UITableViewDataSource,UITableViewDelegate {
 
@@ -44,9 +45,13 @@ class AddEditController: UIViewController,UITableViewDataSource,UITableViewDeleg
     var arringredient : [Ingredient]?
     var arrstep : [Step]?
     var username : String = "";
-    
+    var ingredientlist : [String] = []
+    var steplist :[String] = []
     var country : String = ""
     var type : String = ""
+    
+    var steplistadd : [Step]?
+    var ingredientlistadd : [Ingredient]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,6 +67,12 @@ class AddEditController: UIViewController,UITableViewDataSource,UITableViewDeleg
             spinnertxt2.text = "\(item)"
             type = "\(item)"
         }
+        
+        ingredienttbl.dataSource = self
+        steptbl.dataSource = self
+        
+        ingredienttbl.delegate = self
+        steptbl.delegate = self
         
         
     }
@@ -80,25 +91,81 @@ class AddEditController: UIViewController,UITableViewDataSource,UITableViewDeleg
     @IBOutlet weak var recipedesctxt: UITextField!
     
     @IBAction func savebtn(_ sender: Any) {
-        
-        var recipe = Recipe(context: context)
-        
-        recipe.recipecountry = country
-        recipe.recipetype = type
-        recipe.recipename = recipeTitle.text
-        recipe.recipedesc = recipedesctxt.text
-        recipe.recipeauthor = username
-        recipe.recipeid = Int16(fetchnextid() + 1);
-        
-        do
+        print("something wong")
+        if(checkrecipeunique(recipename: recipeTitle.text ?? ""))
         {
-            try context.save()
-            performSegue(withIdentifier: "tomenufromcreate", sender: nil)
-        }
-        catch
-        {
+
+            let recipe = Recipe(context: context)
+            
+            recipe.recipecountry = country
+            recipe.recipetype = type
+            recipe.recipename = recipeTitle.text
+            recipe.recipedesc = recipedesctxt.text
+            recipe.recipeauthor = username
+            recipe.recipeid = Int16(fetchnextid() + 1);
+            
+            do
+            {
+                try context.save()
+     
+            }
+            catch
+            {
+                
+            }
+//            print("steplist")
+//            print(steplist.count)
+            
+            
+            
+            for ingredient in ingredientlist
+            {
+                var ingredientadd = Ingredient(context: context)
+                
+                ingredientadd.ingredientname = ingredient
+                ingredientadd.recipename = recipeTitle.text ?? ""
+                
+                do
+                {
+                    try context.save()
+
+                }
+                catch
+                {
+                    
+                }
+            }
+            
+            for step in steplist
+            {
+                var steplistadd = Step(context: context)
+                
+                steplistadd.stepname = step
+                steplistadd.recipename = recipeTitle.text ?? ""
+                
+                do
+                {
+                    try context.save()
+
+                }
+                catch
+                {
+                    
+                }
+            }
+            
+            
+            
+          
+                performSegue(withIdentifier: "tomenufromcreate", sender: nil)
             
         }
+        else
+        {
+
+        }
+//
+       
         
     }
     
@@ -120,35 +187,48 @@ class AddEditController: UIViewController,UITableViewDataSource,UITableViewDeleg
         return 1;
     }
     
+    
+    
+    
+    @IBOutlet weak var ingredienttbl: UITableView!
+    
+
+
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         var numberOfRow = 1
             switch tableView {
                 
-//                case topTableView:
-//                    numberOfRow = topData.count
-//                case downTableview:
-//                    numberOfRow = downData.count
+                case ingredienttbl:
+                numberOfRow = ingredientlist.count
+                case steptbl:
+                    numberOfRow = steplist.count
                 default:
                     print("Some things Wrong!!")
                 }
         return numberOfRow
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
+       func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         var cell = UITableViewCell()
-        
+           var cell2 = UITableViewCell()
         switch tableView
         {
-        case ingredientbl:
+        case ingredienttbl:
             
-            cell = ingredientbl.dequeueReusableCell(withIdentifier:"ingredientcell", for: indexPath)
+            cell = ingredienttbl.dequeueReusableCell(withIdentifier:"ingredientcell", for: indexPath)
             
+            var item : String = ingredientlist[indexPath.row]
+            cell.textLabel?.text = item
+//            cell.detailTextLabel?.text = item
         case steptbl:
             cell = steptbl.dequeueReusableCell(withIdentifier: "stepcell", for: indexPath)
-            
+            let item : String = steplist[indexPath.row]
+            cell.textLabel?.text = item
         default:
-            print("Some things Wrong!!")
+            print("Some things Wrong!!in data")
         }
         
       return cell
@@ -214,6 +294,95 @@ class AddEditController: UIViewController,UITableViewDataSource,UITableViewDeleg
         
         return recipelist?.count ?? 0;
     }
+    
+    
+    func checkrecipeunique(recipename : String) -> Bool
+    {
+       
+        let fetchRequest: NSFetchRequest<Recipe>
+        fetchRequest = Recipe.fetchRequest()
+
+        fetchRequest.predicate = NSPredicate(
+            format: "recipename == %@", recipename)
+        var recipecheck : [Recipe]
+        
+        do
+        {
+            try recipecheck = context.fetch(fetchRequest)
+            if(!recipecheck.isEmpty)
+            {
+                if(recipecheck[0].recipename == recipename)
+                {
+                    return false
+                }
+                else{
+                    return true
+                }
+            }
+            
+        }
+        catch
+        {
+            
+        }
+        
+        
+        return true;
+        
+    }
+    
+    
+    //add ingredient
+    
+    @IBOutlet weak var ingredientfieldtxt: UITextField!
+    @IBAction func addingredientbtn(_ sender: Any) {
+
+        if(ingredientfieldtxt.text != "")
+        {
+
+
+
+            ingredientlist.append(ingredientfieldtxt.text ?? "")
+
+
+
+            ingredienttbl.reloadData()
+
+        }
+
+
+
+    }
+    
+    
+    
+    //end of add ingredient
+    
+    
+    //add step
+    
+    @IBOutlet weak var stepfieldtxt: UITextField!
+    @IBAction func addstepbtn(_ sender: Any) {
+        if(stepfieldtxt.text != "")
+        {
+            
+        
+            
+            steplist.append(stepfieldtxt.text ?? "")
+            
+            steptbl.reloadData()
+            
+            
+            
+            
+        }
+    }
+    
+    
+    
+    
+    //end of add step
+    
     
     
 }

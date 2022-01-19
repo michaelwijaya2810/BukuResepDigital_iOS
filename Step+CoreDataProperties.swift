@@ -17,7 +17,7 @@ extension Step {
     }
 
     @NSManaged public var stepname: String?
-    @NSManaged public var recipeid: Int16
+    @NSManaged public var recipename: String?
 
 }
 

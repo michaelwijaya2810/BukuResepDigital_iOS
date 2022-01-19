@@ -15,6 +15,7 @@
 		22AD99E9279849B1003A6175 /* Step+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AD99E5279849B1003A6175 /* Step+CoreDataProperties.swift */; };
 		22AD99EA279849B1003A6175 /* Ingredient+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AD99E6279849B1003A6175 /* Ingredient+CoreDataClass.swift */; };
 		22AD99EB279849B1003A6175 /* Ingredient+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AD99E7279849B1003A6175 /* Ingredient+CoreDataProperties.swift */; };
+		22AD99ED27987CB7003A6175 /* detailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AD99EC27987CB7003A6175 /* detailController.swift */; };
 		22B667112798293000216544 /* Users+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B6670F2798293000216544 /* Users+CoreDataClass.swift */; };
 		22B667122798293000216544 /* Users+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B667102798293000216544 /* Users+CoreDataProperties.swift */; };
 		CE3A5D232796F51200BB629A /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A5D222796F51200BB629A /* HomeController.swift */; };
@@ -67,6 +68,7 @@
 		22AD99E5279849B1003A6175 /* Step+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Step+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		22AD99E6279849B1003A6175 /* Ingredient+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ingredient+CoreDataClass.swift"; sourceTree = "<group>"; };
 		22AD99E7279849B1003A6175 /* Ingredient+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ingredient+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		22AD99EC27987CB7003A6175 /* detailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailController.swift; sourceTree = "<group>"; };
 		22B6670F2798293000216544 /* Users+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Users+CoreDataClass.swift"; sourceTree = "<group>"; };
 		22B667102798293000216544 /* Users+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Users+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		CE3A5D222796F51200BB629A /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				CE3A5D222796F51200BB629A /* HomeController.swift */,
 				CE3A5D2427970C0200BB629A /* DropDown.xcodeproj */,
 				CE3A5D32279712B500BB629A /* AddEditController.swift */,
+				22AD99EC27987CB7003A6175 /* detailController.swift */,
 			);
 			path = TheRecipeBook;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 				22AD99E9279849B1003A6175 /* Step+CoreDataProperties.swift in Sources */,
 				22B667122798293000216544 /* Users+CoreDataProperties.swift in Sources */,
 				22AD99DE27983DAC003A6175 /* Recipe+CoreDataClass.swift in Sources */,
+				22AD99ED27987CB7003A6175 /* detailController.swift in Sources */,
 				2226E6482798051A0072C506 /* LoginController.swift in Sources */,
 				CEF7AF8427649849006B6BD7 /* SceneDelegate.swift in Sources */,
 				CE3A5D33279712B500BB629A /* AddEditController.swift in Sources */,

@@ -10,6 +10,7 @@ import UIKit
 class HomeController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     var recipelist : [Recipe]?
+    var recipename : String = ""
     let context  = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 //        return recipes.count
@@ -52,13 +53,7 @@ class HomeController: UIViewController, UITableViewDataSource, UITableViewDelega
         performSegue(withIdentifier: "tocreate", sender: nil)
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if(segue.identifier == "tocreate")
-        {
-            let dest = segue.destination as? AddEditController
-            dest?.username = username
-        }
-    }
+
     
     func fetchdata()
     {
@@ -90,6 +85,30 @@ class HomeController: UIViewController, UITableViewDataSource, UITableViewDelega
             {
                 
             }
+        }
+ 
+    }
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let recipe = recipelist?[indexPath.row]
+        
+        recipename = recipe?.recipename ?? ""
+        
+        performSegue(withIdentifier: "toedit", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "tocreate")
+        {
+            let dest = segue.destination as? AddEditController
+            dest?.username = username
+        }
+        else if (segue.identifier == "toedit")
+        {
+            let dest = segue.destination as? detailController
+            dest?.username = username
+            dest?.recipename = recipename
         }
     }
 }

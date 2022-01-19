@@ -17,7 +17,7 @@ extension Ingredient {
     }
 
     @NSManaged public var ingredientname: String?
-    @NSManaged public var recipeid: Int16
+    @NSManaged public var recipename: String?
 
 }
 
