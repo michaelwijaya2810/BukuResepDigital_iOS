@@ -34,8 +34,6 @@ class HomeController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBAction func addRecipe(_ sender: Any) {
     }
     
-    @IBAction func filterAction(_ sender: Any) {
-    }
     @IBOutlet weak var recipeTable: UITableView!
     
 

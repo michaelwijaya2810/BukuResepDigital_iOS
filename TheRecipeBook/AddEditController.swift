@@ -120,7 +120,7 @@ class AddEditController: UIViewController,UITableViewDataSource,UITableViewDeleg
             
             for ingredient in ingredientlist
             {
-                var ingredientadd = Ingredient(context: context)
+                let ingredientadd = Ingredient(context: context)
                 
                 ingredientadd.ingredientname = ingredient
                 ingredientadd.recipename = recipeTitle.text ?? ""
@@ -138,7 +138,7 @@ class AddEditController: UIViewController,UITableViewDataSource,UITableViewDeleg
             
             for step in steplist
             {
-                var steplistadd = Step(context: context)
+                let steplistadd = Step(context: context)
                 
                 steplistadd.stepname = step
                 steplistadd.recipename = recipeTitle.text ?? ""
@@ -220,7 +220,7 @@ class AddEditController: UIViewController,UITableViewDataSource,UITableViewDeleg
             
             cell = ingredienttbl.dequeueReusableCell(withIdentifier:"ingredientcell", for: indexPath)
             
-            var item : String = ingredientlist[indexPath.row]
+            let item : String = ingredientlist[indexPath.row]
             cell.textLabel?.text = item
 //            cell.detailTextLabel?.text = item
         case steptbl:

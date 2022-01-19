@@ -14,8 +14,6 @@ class RegisterController: UIViewController {
     @IBOutlet weak var passwordField: UITextField!
     let context  = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
-    @IBOutlet weak var errorlbl: UILabel!
-    
     var userlist : [Users]?
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,10 +48,16 @@ class RegisterController: UIViewController {
     
     func checkRegister(username: String, password: String) -> Bool{
         if username.isEmpty{
-            errorlbl.text = "input username"
+            showAlert(msg: "Please input your username")
+            return false
+        }else if username.count < 3 {
+            showAlert(msg: "Username must be at least 3 characters!")
             return false
         }else if password.isEmpty{
-            errorlbl.text = "input password"
+            showAlert(msg: "Please input your password!")
+            return false
+        }else if password.count < 6{
+            showAlert(msg: "Password must be at least 6 characters!")
             return false
         }
         else
@@ -69,7 +73,7 @@ class RegisterController: UIViewController {
                 {
                     if(user.username == username)
                     {
-                        errorlbl.text = "username taken"
+                        showAlert(msg: "Username has been taken! Please make a new username!")
                         return false
                     }
                 }
@@ -84,7 +88,14 @@ class RegisterController: UIViewController {
         }
         return true
     }
-    
+    func showAlert(msg: String)
+    {
+        let alert = UIAlertController(title: "Register Failed", message: msg, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+        NSLog("The \"OK\" alert occured.")
+        }))
+        self.present(alert, animated: true, completion: nil)
+    }
     
     
 }

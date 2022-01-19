@@ -42,20 +42,23 @@ class LoginController: UIViewController {
         }
     }
 	
-    override func unwind(for unwindSegue: UIStoryboardSegue, towards subsequentVC: UIViewController) {
+    @IBAction func unwindToLogin(_ unwindSegue: UIStoryboardSegue) {
         
     }
     
     func checkLogin(username: String, password: String) -> Bool{
         if username.isEmpty{
+            showAlert(msg: "Please input your username!")
             return false
         }else if password.isEmpty{
+            showAlert(msg: "Please input your password!")
             return false
         }
         else if(checkusernameandpassword(username: username,password: password))
         {
             return true
         }
+        showAlert(msg: "Username/password is wrong. Please check it again!")
         return false
     }
     
@@ -82,6 +85,15 @@ class LoginController: UIViewController {
             
             
             return false;
+    }
+    
+    func showAlert(msg: String)
+    {
+        let alert = UIAlertController(title: "Login Failed", message: msg, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+        NSLog("The \"OK\" alert occured.")
+        }))
+        self.present(alert, animated: true, completion: nil)
     }
 }
 

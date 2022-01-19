@@ -18,6 +18,7 @@
 		22B667122798293000216544 /* Users+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B667102798293000216544 /* Users+CoreDataProperties.swift */; };
 		CE0803DE27989B9A00C581A2 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0803DB27989B9900C581A2 /* LoginController.swift */; };
 		CE0803E027989BA600C581A2 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0803DF27989BA600C581A2 /* RegisterController.swift */; };
+		CE0803E22798A8B700C581A2 /* recipe_img.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CE0803E12798A8B700C581A2 /* recipe_img.jpeg */; };
 		CE3A5D232796F51200BB629A /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A5D222796F51200BB629A /* HomeController.swift */; };
 		CE3A5D33279712B500BB629A /* AddEditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A5D32279712B500BB629A /* AddEditController.swift */; };
 		CEF7AF8227649849006B6BD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF7AF8127649849006B6BD7 /* AppDelegate.swift */; };
@@ -71,6 +72,7 @@
 		22B667102798293000216544 /* Users+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Users+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		CE0803DB27989B9900C581A2 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		CE0803DF27989BA600C581A2 /* RegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
+		CE0803E12798A8B700C581A2 /* recipe_img.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = recipe_img.jpeg; sourceTree = "<group>"; };
 		CE3A5D222796F51200BB629A /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		CE3A5D2427970C0200BB629A /* DropDown.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DropDown.xcodeproj; path = "DropDown-master/DropDown.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		CE3A5D32279712B500BB629A /* AddEditController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditController.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				CEF7AF8327649849006B6BD7 /* SceneDelegate.swift */,
 				CEF7AF8727649849006B6BD7 /* Main.storyboard */,
 				CEF7AF8D2764984B006B6BD7 /* Assets.xcassets */,
+				CE0803E12798A8B700C581A2 /* recipe_img.jpeg */,
 				CEF7AF8F2764984B006B6BD7 /* LaunchScreen.storyboard */,
 				CEF7AF922764984B006B6BD7 /* Info.plist */,
 				CEF7AF8A27649849006B6BD7 /* TheRecipeBook.xcdatamodeld */,
@@ -241,6 +244,7 @@
 				CEF7AF912764984B006B6BD7 /* LaunchScreen.storyboard in Resources */,
 				CEF7AF8E2764984B006B6BD7 /* Assets.xcassets in Resources */,
 				CEF7AF8927649849006B6BD7 /* Main.storyboard in Resources */,
+				CE0803E22798A8B700C581A2 /* recipe_img.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
