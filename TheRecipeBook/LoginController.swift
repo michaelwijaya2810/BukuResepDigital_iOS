@@ -33,6 +33,14 @@ class LoginController: UIViewController {
             performSegue(withIdentifier: "tomenu", sender: nil)
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "tomenu")
+        {
+            let dest = segue.destination as? HomeController
+            dest?.username = usernametxt.text ?? "" 
+        }
+    }
 	
     override func unwind(for unwindSegue: UIStoryboardSegue, towards subsequentVC: UIViewController) {
         
