@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		2226E6482798051A0072C506 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2226E6452798051A0072C506 /* LoginController.swift */; };
 		2226E64A2798051A0072C506 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2226E6492798051A0072C506 /* RegisterController.swift */; };
+		22AD99DE27983DAC003A6175 /* Recipe+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AD99D827983DAC003A6175 /* Recipe+CoreDataClass.swift */; };
+		22AD99DF27983DAC003A6175 /* Recipe+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AD99D927983DAC003A6175 /* Recipe+CoreDataProperties.swift */; };
+		22AD99E8279849B1003A6175 /* Step+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AD99E4279849B1003A6175 /* Step+CoreDataClass.swift */; };
+		22AD99E9279849B1003A6175 /* Step+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AD99E5279849B1003A6175 /* Step+CoreDataProperties.swift */; };
+		22AD99EA279849B1003A6175 /* Ingredient+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AD99E6279849B1003A6175 /* Ingredient+CoreDataClass.swift */; };
+		22AD99EB279849B1003A6175 /* Ingredient+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AD99E7279849B1003A6175 /* Ingredient+CoreDataProperties.swift */; };
 		22B667112798293000216544 /* Users+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B6670F2798293000216544 /* Users+CoreDataClass.swift */; };
 		22B667122798293000216544 /* Users+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B667102798293000216544 /* Users+CoreDataProperties.swift */; };
-		CE3A5D1B2796E93800BB629A /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A5D1A2796E93800BB629A /* Recipe.swift */; };
-		CE3A5D202796F2DD00BB629A /* RecipeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A5D1E2796F2DD00BB629A /* RecipeViewCell.swift */; };
-		CE3A5D212796F2DD00BB629A /* RecipeViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE3A5D1F2796F2DD00BB629A /* RecipeViewCell.xib */; };
 		CE3A5D232796F51200BB629A /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A5D222796F51200BB629A /* HomeController.swift */; };
 		CE3A5D33279712B500BB629A /* AddEditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A5D32279712B500BB629A /* AddEditController.swift */; };
 		CEF7AF8227649849006B6BD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF7AF8127649849006B6BD7 /* AppDelegate.swift */; };
@@ -58,11 +61,14 @@
 /* Begin PBXFileReference section */
 		2226E6452798051A0072C506 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginController.swift; path = "../../../../Documents/BukuResepDigital_iOS:registerpagelogin/TheRecipeBook/LoginController.swift"; sourceTree = "<group>"; };
 		2226E6492798051A0072C506 /* RegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterController.swift; path = "../../../../Documents/BukuResepDigital_iOS:registerpagelogin/TheRecipeBook/RegisterController.swift"; sourceTree = "<group>"; };
+		22AD99D827983DAC003A6175 /* Recipe+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recipe+CoreDataClass.swift"; sourceTree = "<group>"; };
+		22AD99D927983DAC003A6175 /* Recipe+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recipe+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		22AD99E4279849B1003A6175 /* Step+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Step+CoreDataClass.swift"; sourceTree = "<group>"; };
+		22AD99E5279849B1003A6175 /* Step+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Step+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		22AD99E6279849B1003A6175 /* Ingredient+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ingredient+CoreDataClass.swift"; sourceTree = "<group>"; };
+		22AD99E7279849B1003A6175 /* Ingredient+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ingredient+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		22B6670F2798293000216544 /* Users+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Users+CoreDataClass.swift"; sourceTree = "<group>"; };
 		22B667102798293000216544 /* Users+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Users+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		CE3A5D1A2796E93800BB629A /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
-		CE3A5D1E2796F2DD00BB629A /* RecipeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewCell.swift; sourceTree = "<group>"; };
-		CE3A5D1F2796F2DD00BB629A /* RecipeViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipeViewCell.xib; sourceTree = "<group>"; };
 		CE3A5D222796F51200BB629A /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		CE3A5D2427970C0200BB629A /* DropDown.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DropDown.xcodeproj; path = "DropDown-master/DropDown.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		CE3A5D32279712B500BB629A /* AddEditController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditController.swift; sourceTree = "<group>"; };
@@ -100,6 +106,12 @@
 		CEF7AF7527649849006B6BD7 = {
 			isa = PBXGroup;
 			children = (
+				22AD99E4279849B1003A6175 /* Step+CoreDataClass.swift */,
+				22AD99E5279849B1003A6175 /* Step+CoreDataProperties.swift */,
+				22AD99E6279849B1003A6175 /* Ingredient+CoreDataClass.swift */,
+				22AD99E7279849B1003A6175 /* Ingredient+CoreDataProperties.swift */,
+				22AD99D827983DAC003A6175 /* Recipe+CoreDataClass.swift */,
+				22AD99D927983DAC003A6175 /* Recipe+CoreDataProperties.swift */,
 				22B6670F2798293000216544 /* Users+CoreDataClass.swift */,
 				22B667102798293000216544 /* Users+CoreDataProperties.swift */,
 				CEF7AF8027649849006B6BD7 /* TheRecipeBook */,
@@ -127,9 +139,6 @@
 				CEF7AF8F2764984B006B6BD7 /* LaunchScreen.storyboard */,
 				CEF7AF922764984B006B6BD7 /* Info.plist */,
 				CEF7AF8A27649849006B6BD7 /* TheRecipeBook.xcdatamodeld */,
-				CE3A5D1A2796E93800BB629A /* Recipe.swift */,
-				CE3A5D1E2796F2DD00BB629A /* RecipeViewCell.swift */,
-				CE3A5D1F2796F2DD00BB629A /* RecipeViewCell.xib */,
 				CE3A5D222796F51200BB629A /* HomeController.swift */,
 				CE3A5D2427970C0200BB629A /* DropDown.xcodeproj */,
 				CE3A5D32279712B500BB629A /* AddEditController.swift */,
@@ -228,7 +237,6 @@
 			files = (
 				CEF7AF912764984B006B6BD7 /* LaunchScreen.storyboard in Resources */,
 				CEF7AF8E2764984B006B6BD7 /* Assets.xcassets in Resources */,
-				CE3A5D212796F2DD00BB629A /* RecipeViewCell.xib in Resources */,
 				CEF7AF8927649849006B6BD7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,16 +248,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE3A5D202796F2DD00BB629A /* RecipeViewCell.swift in Sources */,
+				22AD99E8279849B1003A6175 /* Step+CoreDataClass.swift in Sources */,
+				22AD99EB279849B1003A6175 /* Ingredient+CoreDataProperties.swift in Sources */,
 				CEF7AF8227649849006B6BD7 /* AppDelegate.swift in Sources */,
 				CE3A5D232796F51200BB629A /* HomeController.swift in Sources */,
-				CE3A5D1B2796E93800BB629A /* Recipe.swift in Sources */,
 				CEF7AF8C27649849006B6BD7 /* TheRecipeBook.xcdatamodeld in Sources */,
+				22AD99E9279849B1003A6175 /* Step+CoreDataProperties.swift in Sources */,
 				22B667122798293000216544 /* Users+CoreDataProperties.swift in Sources */,
+				22AD99DE27983DAC003A6175 /* Recipe+CoreDataClass.swift in Sources */,
 				2226E6482798051A0072C506 /* LoginController.swift in Sources */,
 				CEF7AF8427649849006B6BD7 /* SceneDelegate.swift in Sources */,
 				CE3A5D33279712B500BB629A /* AddEditController.swift in Sources */,
+				22AD99DF27983DAC003A6175 /* Recipe+CoreDataProperties.swift in Sources */,
 				22B667112798293000216544 /* Users+CoreDataClass.swift in Sources */,
+				22AD99EA279849B1003A6175 /* Ingredient+CoreDataClass.swift in Sources */,
 				2226E64A2798051A0072C506 /* RegisterController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
