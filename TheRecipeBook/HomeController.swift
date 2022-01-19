@@ -9,20 +9,26 @@ import UIKit
 
 class HomeController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    var recipes = [Recipe]()
-    
+    var recipelist : [Recipe]?
+    var recipename : String = ""
+    let context  = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 //        return recipes.count
-        return 3
+        return recipelist?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "RecipeViewCell") as? RecipeViewCell{
-            return cell
-        }
+        let cell = tableView.dequeueReusableCell(withIdentifier: "RecipeViewCell")!
+        let recipe = recipelist?[indexPath.row]
         
-        return UITableViewCell()
+        cell.textLabel?.text = recipe?.recipename ?? ""
+        
+        cell.detailTextLabel?.text = recipe?.recipeauthor ?? ""
+            
+        return cell
+       
     }
+    var username : String = ""
     
 
     @IBAction func addRecipe(_ sender: Any) {
@@ -32,29 +38,77 @@ class HomeController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     @IBOutlet weak var recipeTable: UITableView!
     
-    private func registerTableCells(){
-        let recipeCell = UINib(nibName: "RecipeViewCell", bundle: nil)
-        self.recipeTable.register(recipeCell, forCellReuseIdentifier: "RecipeViewCell")
-    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        fetchdata();
         self.recipeTable.dataSource = self
         self.recipeTable.delegate = self
         
-        self.registerTableCells()
+        
+    }
+    
+    @IBAction func addbtn(_ sender: Any) {
+        performSegue(withIdentifier: "tocreate", sender: nil)
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func fetchdata()
+    {
+        
+        do
+        {
+            try recipelist = context.fetch(Recipe.fetchRequest())
+            
+        }
+        catch{
+            
+        }
+        
     }
-    */
 
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if(editingStyle == .delete)
+        {
+            do
+            {
+                let recipe = recipelist![indexPath.row]
+                context.delete(recipe)
+                
+                try context.save();
+                fetchdata()
+                tableView.reloadData()
+            }
+            catch
+            {
+                
+            }
+        }
+ 
+    }
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let recipe = recipelist?[indexPath.row]
+        
+        recipename = recipe?.recipename ?? ""
+        
+        performSegue(withIdentifier: "toedit", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "tocreate")
+        {
+            let dest = segue.destination as? AddEditController
+            dest?.username = username
+        }
+        else if (segue.identifier == "toedit")
+        {
+            let dest = segue.destination as? detailController
+            dest?.username = username
+            dest?.recipename = recipename
+        }
+    }
 }
