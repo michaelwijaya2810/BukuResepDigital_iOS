@@ -642,7 +642,6 @@
         <!--Detail Controller-->
         <scene sceneID="Pou-iE-Baa">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Kkg-AV-rc3" sceneMemberID="firstResponder"/>
                 <viewController id="YgE-Vg-Kuw" customClass="detailController" customModule="TheRecipeBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yot-dk-B2P">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="746"/>
@@ -825,6 +824,7 @@
                         <outlet property="typelbl" destination="Bqk-0C-rlH" id="GmX-Zq-Cgc"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kkg-AV-rc3" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-67.391304347826093" y="-550.44642857142856"/>
         </scene>
