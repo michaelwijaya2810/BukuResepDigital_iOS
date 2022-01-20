@@ -7,20 +7,78 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22AD99DE27983DAC003A6175 /* Recipe+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AD99D827983DAC003A6175 /* Recipe+CoreDataClass.swift */; };
+		22AD99DF27983DAC003A6175 /* Recipe+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AD99D927983DAC003A6175 /* Recipe+CoreDataProperties.swift */; };
+		22AD99E8279849B1003A6175 /* Step+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AD99E4279849B1003A6175 /* Step+CoreDataClass.swift */; };
+		22AD99E9279849B1003A6175 /* Step+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AD99E5279849B1003A6175 /* Step+CoreDataProperties.swift */; };
+		22AD99EA279849B1003A6175 /* Ingredient+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AD99E6279849B1003A6175 /* Ingredient+CoreDataClass.swift */; };
+		22AD99EB279849B1003A6175 /* Ingredient+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AD99E7279849B1003A6175 /* Ingredient+CoreDataProperties.swift */; };
+		22AD99ED27987CB7003A6175 /* detailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AD99EC27987CB7003A6175 /* detailController.swift */; };
+		22B667112798293000216544 /* Users+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B6670F2798293000216544 /* Users+CoreDataClass.swift */; };
+		22B667122798293000216544 /* Users+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B667102798293000216544 /* Users+CoreDataProperties.swift */; };
+		CE0803DE27989B9A00C581A2 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0803DB27989B9900C581A2 /* LoginController.swift */; };
+		CE0803E027989BA600C581A2 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0803DF27989BA600C581A2 /* RegisterController.swift */; };
+		CE0803E22798A8B700C581A2 /* recipe_img.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CE0803E12798A8B700C581A2 /* recipe_img.jpeg */; };
+		CE3A5D232796F51200BB629A /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A5D222796F51200BB629A /* HomeController.swift */; };
+		CE3A5D33279712B500BB629A /* AddEditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A5D32279712B500BB629A /* AddEditController.swift */; };
 		CEF7AF8227649849006B6BD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF7AF8127649849006B6BD7 /* AppDelegate.swift */; };
 		CEF7AF8427649849006B6BD7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF7AF8327649849006B6BD7 /* SceneDelegate.swift */; };
-		CEF7AF8627649849006B6BD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF7AF8527649849006B6BD7 /* ViewController.swift */; };
 		CEF7AF8927649849006B6BD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF7AF8727649849006B6BD7 /* Main.storyboard */; };
 		CEF7AF8C27649849006B6BD7 /* TheRecipeBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEF7AF8A27649849006B6BD7 /* TheRecipeBook.xcdatamodeld */; };
 		CEF7AF8E2764984B006B6BD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEF7AF8D2764984B006B6BD7 /* Assets.xcassets */; };
 		CEF7AF912764984B006B6BD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF7AF8F2764984B006B6BD7 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		CE3A5D2A27970C0200BB629A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE3A5D2427970C0200BB629A /* DropDown.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A76440F1B676C2300BF1A2D;
+			remoteInfo = Demo;
+		};
+		CE3A5D2C27970C0200BB629A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE3A5D2427970C0200BB629A /* DropDown.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A7644241B676C2300BF1A2D;
+			remoteInfo = DropDownTests;
+		};
+		CE3A5D2E27970C0200BB629A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE3A5D2427970C0200BB629A /* DropDown.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0AB5D8711D0EEECD002D3A17;
+			remoteInfo = DropDown;
+		};
+		CE3A5D3027970E4700BB629A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE3A5D2427970C0200BB629A /* DropDown.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AB5D8701D0EEECD002D3A17;
+			remoteInfo = DropDown;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		22AD99D827983DAC003A6175 /* Recipe+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recipe+CoreDataClass.swift"; sourceTree = "<group>"; };
+		22AD99D927983DAC003A6175 /* Recipe+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recipe+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		22AD99E4279849B1003A6175 /* Step+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Step+CoreDataClass.swift"; sourceTree = "<group>"; };
+		22AD99E5279849B1003A6175 /* Step+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Step+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		22AD99E6279849B1003A6175 /* Ingredient+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ingredient+CoreDataClass.swift"; sourceTree = "<group>"; };
+		22AD99E7279849B1003A6175 /* Ingredient+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ingredient+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		22AD99EC27987CB7003A6175 /* detailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailController.swift; sourceTree = "<group>"; };
+		22B6670F2798293000216544 /* Users+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Users+CoreDataClass.swift"; sourceTree = "<group>"; };
+		22B667102798293000216544 /* Users+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Users+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CE0803DB27989B9900C581A2 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		CE0803DF27989BA600C581A2 /* RegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
+		CE0803E12798A8B700C581A2 /* recipe_img.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = recipe_img.jpeg; sourceTree = "<group>"; };
+		CE3A5D222796F51200BB629A /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		CE3A5D2427970C0200BB629A /* DropDown.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DropDown.xcodeproj; path = "DropDown-master/DropDown.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		CE3A5D32279712B500BB629A /* AddEditController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditController.swift; sourceTree = "<group>"; };
 		CEF7AF7E27649849006B6BD7 /* TheRecipeBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheRecipeBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF7AF8127649849006B6BD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEF7AF8327649849006B6BD7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CEF7AF8527649849006B6BD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CEF7AF8827649849006B6BD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEF7AF8B27649849006B6BD7 /* TheRecipeBook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TheRecipeBook.xcdatamodel; sourceTree = "<group>"; };
 		CEF7AF8D2764984B006B6BD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -39,9 +97,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE3A5D2527970C0200BB629A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE3A5D2B27970C0200BB629A /* Demo.app */,
+				CE3A5D2D27970C0200BB629A /* DropDownTests.xctest */,
+				CE3A5D2F27970C0200BB629A /* DropDown.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		CEF7AF7527649849006B6BD7 = {
 			isa = PBXGroup;
 			children = (
+				22AD99E4279849B1003A6175 /* Step+CoreDataClass.swift */,
+				22AD99E5279849B1003A6175 /* Step+CoreDataProperties.swift */,
+				22AD99E6279849B1003A6175 /* Ingredient+CoreDataClass.swift */,
+				22AD99E7279849B1003A6175 /* Ingredient+CoreDataProperties.swift */,
+				22AD99D827983DAC003A6175 /* Recipe+CoreDataClass.swift */,
+				22AD99D927983DAC003A6175 /* Recipe+CoreDataProperties.swift */,
+				22B6670F2798293000216544 /* Users+CoreDataClass.swift */,
+				22B667102798293000216544 /* Users+CoreDataProperties.swift */,
 				CEF7AF8027649849006B6BD7 /* TheRecipeBook */,
 				CEF7AF7F27649849006B6BD7 /* Products */,
 			);
@@ -58,14 +134,20 @@
 		CEF7AF8027649849006B6BD7 /* TheRecipeBook */ = {
 			isa = PBXGroup;
 			children = (
+				CE0803DB27989B9900C581A2 /* LoginController.swift */,
+				CE0803DF27989BA600C581A2 /* RegisterController.swift */,
 				CEF7AF8127649849006B6BD7 /* AppDelegate.swift */,
 				CEF7AF8327649849006B6BD7 /* SceneDelegate.swift */,
-				CEF7AF8527649849006B6BD7 /* ViewController.swift */,
 				CEF7AF8727649849006B6BD7 /* Main.storyboard */,
 				CEF7AF8D2764984B006B6BD7 /* Assets.xcassets */,
+				CE0803E12798A8B700C581A2 /* recipe_img.jpeg */,
 				CEF7AF8F2764984B006B6BD7 /* LaunchScreen.storyboard */,
 				CEF7AF922764984B006B6BD7 /* Info.plist */,
 				CEF7AF8A27649849006B6BD7 /* TheRecipeBook.xcdatamodeld */,
+				CE3A5D222796F51200BB629A /* HomeController.swift */,
+				CE3A5D2427970C0200BB629A /* DropDown.xcodeproj */,
+				CE3A5D32279712B500BB629A /* AddEditController.swift */,
+				22AD99EC27987CB7003A6175 /* detailController.swift */,
 			);
 			path = TheRecipeBook;
 			sourceTree = "<group>";
@@ -84,6 +166,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				CE3A5D3127970E4700BB629A /* PBXTargetDependency */,
 			);
 			name = TheRecipeBook;
 			productName = TheRecipeBook;
@@ -116,12 +199,42 @@
 			mainGroup = CEF7AF7527649849006B6BD7;
 			productRefGroup = CEF7AF7F27649849006B6BD7 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CE3A5D2527970C0200BB629A /* Products */;
+					ProjectRef = CE3A5D2427970C0200BB629A /* DropDown.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				CEF7AF7D27649849006B6BD7 /* TheRecipeBook */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		CE3A5D2B27970C0200BB629A /* Demo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = Demo.app;
+			remoteRef = CE3A5D2A27970C0200BB629A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE3A5D2D27970C0200BB629A /* DropDownTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = DropDownTests.xctest;
+			remoteRef = CE3A5D2C27970C0200BB629A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE3A5D2F27970C0200BB629A /* DropDown.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DropDown.framework;
+			remoteRef = CE3A5D2E27970C0200BB629A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		CEF7AF7C27649849006B6BD7 /* Resources */ = {
@@ -131,6 +244,7 @@
 				CEF7AF912764984B006B6BD7 /* LaunchScreen.storyboard in Resources */,
 				CEF7AF8E2764984B006B6BD7 /* Assets.xcassets in Resources */,
 				CEF7AF8927649849006B6BD7 /* Main.storyboard in Resources */,
+				CE0803E22798A8B700C581A2 /* recipe_img.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,14 +255,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEF7AF8627649849006B6BD7 /* ViewController.swift in Sources */,
+				22AD99E8279849B1003A6175 /* Step+CoreDataClass.swift in Sources */,
+				22AD99EB279849B1003A6175 /* Ingredient+CoreDataProperties.swift in Sources */,
 				CEF7AF8227649849006B6BD7 /* AppDelegate.swift in Sources */,
+				CE3A5D232796F51200BB629A /* HomeController.swift in Sources */,
 				CEF7AF8C27649849006B6BD7 /* TheRecipeBook.xcdatamodeld in Sources */,
+				22AD99E9279849B1003A6175 /* Step+CoreDataProperties.swift in Sources */,
+				22B667122798293000216544 /* Users+CoreDataProperties.swift in Sources */,
+				22AD99DE27983DAC003A6175 /* Recipe+CoreDataClass.swift in Sources */,
+				CE0803E027989BA600C581A2 /* RegisterController.swift in Sources */,
+				22AD99ED27987CB7003A6175 /* detailController.swift in Sources */,
 				CEF7AF8427649849006B6BD7 /* SceneDelegate.swift in Sources */,
+				CE0803DE27989B9A00C581A2 /* LoginController.swift in Sources */,
+				CE3A5D33279712B500BB629A /* AddEditController.swift in Sources */,
+				22AD99DF27983DAC003A6175 /* Recipe+CoreDataProperties.swift in Sources */,
+				22B667112798293000216544 /* Users+CoreDataClass.swift in Sources */,
+				22AD99EA279849B1003A6175 /* Ingredient+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE3A5D3127970E4700BB629A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DropDown;
+			targetProxy = CE3A5D3027970E4700BB629A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CEF7AF8727649849006B6BD7 /* Main.storyboard */ = {

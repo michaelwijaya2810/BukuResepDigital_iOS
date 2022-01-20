@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19206" systemVersion="20G95" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Ingredient" representedClassName=".Ingredient" syncable="YES">
+        <attribute name="ingredientname" optional="YES" attributeType="String"/>
+        <attribute name="recipename" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Recipe" representedClassName=".Recipe" syncable="YES">
+        <attribute name="recipeauthor" optional="YES" attributeType="String"/>
+        <attribute name="recipecountry" optional="YES" attributeType="String"/>
+        <attribute name="recipedesc" optional="YES" attributeType="String"/>
+        <attribute name="recipeid" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="recipename" optional="YES" attributeType="String"/>
+        <attribute name="recipetype" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Step" representedClassName=".Step" syncable="YES">
+        <attribute name="recipename" optional="YES" attributeType="String"/>
+        <attribute name="stepname" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Users" representedClassName=".Users" syncable="YES">
+        <attribute name="password" optional="YES" attributeType="String"/>
+        <attribute name="username" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="Users" positionX="-63" positionY="-18" width="128" height="59"/>
+        <element name="Recipe" positionX="-63" positionY="0" width="128" height="119"/>
+        <element name="Ingredient" positionX="-54" positionY="36" width="128" height="59"/>
+        <element name="Step" positionX="-36" positionY="45" width="128" height="59"/>
+    </elements>
+</model>
